@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="Курсач_Кинематика.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Курсач_Кинематика"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Text="Выберете задачу"/>
+        <Button Content="{x:Bind Path=task1}" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="1" Click="StartTask1"/>
+        <Button Content="{x:Bind Path=task2}" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="2" Click="StartTask2"/>
+        <Button Content="{x:Bind Path=task3}" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="3" Click="StartTask3"/>
+        <Button Content="{x:Bind Path=task4}" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="4" Click="StartTask4"/>
+        <Button Content="{x:Bind Path=task5}" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="5" Click="StartTask5"/>
+    </Grid>
+</Page>
